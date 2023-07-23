@@ -29,6 +29,13 @@ return require('packer').startup(function(use)
 	}
 
 	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons', -- optional
+		},
+	}
+
+	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v2.x',
 		requires = {
